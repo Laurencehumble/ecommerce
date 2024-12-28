@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+    <title>LodiShop</title>
+     <!-- CSS Link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+<body>
+    <!-- navbar -->
+  <section id="header">
+    <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+    <div>
+    <ul id="navbar">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="#feature">Shop</a></li>
+      <li><a href="#newsletter">Contact</a></li>
+      <a href="#" id="close"><i class="fas fa-times"></i></a>
+      <div id="mobile">
+        <button id="open-cart" class="open-cart">
+            <i class="fas fa-shopping-bag btn"></i>
+            <span id="cart-count">0</span> <!-- Display item count -->
+        </button>
+        <i id="bar" class="fas fa-outdent"></i>
+    </div>
+    </ul>
+    </div>
+    
+  </section>
+
+  <div id="cart-overlay" class="cart-overlay">
+    <div id="cart-container" class="cart-container">
+      <h2>Your Cart</h2>
+      <div id="cart-items" class="cart-items">
+        <!-- Cart items will be dynamically added here -->
+      </div>
+      <p class="subtotal">Subtotal: ₱0.00</p>
+      <button id="close-cart" class="close-cart">Close</button>
+      <button id="checkout-cart" class="checkout-cart">Checkout</button>
+    </div>
+  </div>
+<!-- Page -->
+
+<div class="wrap">
+  <div class="search">
+     <input type="text" class="searchTerm" placeholder="What are you looking for?" data-search>
+     <button type="submit" class="searchButton">
+       <i class="fa fa-search"></i>
+    </button>
+  </div>
+</div>
+  
+
+  <section id="product1" class="section-p1 user-cards">
+      <h2>Featured Products</h2>
+      <p>Summer Collections New Modern Design</p>
+      <div class="pro-container">
+      <div class="pro" data-id="f1" data-name="Floral Yellow Hawaiian Shirt" data-price="78" data-image="img/products/f1.jpg">
+        <img src="img/products/f1.jpg" alt="">
+          <div class="des">
+            <span>Hawaiian Paradise</span>
+            <h5>Floral Yellow Hawaiian Shirt</h5>
+            <div class="star"></div>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <h4>$78</h4>
+          </div>
+          <button class="add-to-cart"><i class="fas fa-cart-plus cart"></i></button>
+      </div>
+      <div class="pro" data-id="f2" data-name="Tropical Palm Hawaiian Shirt" data-price="78" data-image="img/products/f2.jpg">
+        <img src="img/products/f2.jpg" alt="">
+          <div class="des">
+            <span>Tropical Vibes</span>
+            <h5>Tropical Palm Hawaiian Shirt</h5>
+            <div class="star"></div>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <h4>$78</h4>
+          </div>
+          <button class="add-to-cart"><i class="fas fa-cart-plus cart"></i></button>
+      </div>
+      <div class="pro" data-id="f3" data-name="Red Floral Pattern Shirt" data-price="78" data-image="img/products/f3.jpg">
+        <img src="img/products/f3.jpg" alt="">
+          <div class="des">
+            <span>BloomWear</span>
+            <h5>Red Floral Pattern Shirt</h5>
+            <div class="star"></div>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <h4>$78</h4>
+          </div>
+          <button class="add-to-cart"><i class="fas fa-cart-plus cart"></i></button>
+      </div>
+      <div class="pro" data-id="f4" data-name="White Cherry Blossom Shirt" data-price="78" data-image="img/products/f4.jpg">
+        <img src="img/products/f4.jpg" alt="">
+          <div class="des">
+            <span>Sakura Styles</span>
+            <h5>White Cherry Blossom Shirt</h5>
+            <div class="star"></div>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <h4>$78</h4>
+          </div>
+          <button class="add-to-cart"><i class="fas fa-cart-plus cart"></i></button>
+      </div>
+      <div class="pro" data-id="f5" data-name="Navy Blue Floral Hawaiian Shirt" data-price="78" data-image="img/products/f5.jpg">
+        <img src="img/products/f5.jpg" alt="">
+          <div class="des">
+            <span>Ocean Breeze</span>
+            <h5>Navy Blue Floral Hawaiian Shirt</h5>
+            <div class="star"></div>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <h4>$78</h4>
+          </div>
+          <button class="add-to-cart"><i class="fas fa-cart-plus cart"></i></button>
+      </div>
+      <div class="pro" data-id="f6" data-name="Color-Block Casual Shirt" data-price="78" data-image="img/products/f6.jpg">
+        <img src="img/products/f6.jpg" alt="">
+          <div class="des">
+            <span>Urban Threads</span>
+            <h5>Color-Block Casual Shirt</h5>
+            <div class="star"></div>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <h4>$78</h4>
+          </div>
+          <button class="add-to-cart"><i class="fas fa-cart-plus cart"></i></button>
+      </div>
+      <div class="pro" data-id="f7" data-name="Linen Wide-Leg Pants" data-price="78" data-image="img/products/f7.jpg">
+        <img src="img/products/f7.jpg" alt="">
+          <div class="des">
+            <span>Cozy Elegance</span>
+            <h5>Linen Wide-Leg Pants</h5>
+            <div class="star"></div>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <h4>$78</h4>
+          </div>
+          <button class="add-to-cart"><i class="fas fa-cart-plus cart"></i></button>
+      </div>
+      <div class="pro" data-id="f8" data-name="Vintage Cat Print Blouse" data-price="78" data-image="img/products/f8.jpg">
+        <img src="img/products/f8.jpg" alt="">
+          <div class="des">
+            <span>Feline Chic</span>
+            <h5>Vintage Cat Print Blouse</h5>
+            <div class="star"></div>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <h4>$78</h4>
+          </div>
+          <button class="add-to-cart"><i class="fas fa-cart-plus cart"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="product1" class="section-p1">
+      <h2>New Arrivals</h2>
+      <p>Summer Collections New Modern Design</p>
+      <div class="pro-container">
+      <div class="pro" data-id="n1" data-name="Light Blue Oxford Shirt" data-price="78" data-image="img/products/n1.jpg">
+        <img src="img/products/n1.jpg" alt="">
+          <div class="des">
+            <span>Minimal Classics</span>
+            <h5>Light Blue Oxford Shirt</h5>
+            <div class="star"></div>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <h4>$78</h4>
+          </div>
+          <button class="add-to-cart"><i class="fas fa-cart-plus cart"></i></button>
+      </div>
+      <div class="pro" data-id="n2" data-name="Navy Checkered Shirt" data-price="78" data-image="img/products/n2.jpg">
+        <img src="img/products/n2.jpg" alt="">
+          <div class="des">
+            <span>Urban Patterns</span>
+            <h5>Navy Checkered Shirt</h5>
+            <div class="star"></div>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <h4>$78</h4>
+          </div>
+          <button class="add-to-cart"><i class="fas fa-cart-plus cart"></i></button>
+      </div>
+      <div class="pro" data-id="n3" data-name="Classic White Button-Up Shirt" data-price="78" data-image="img/products/n3.jpg">
+        <img src="img/products/n3.jpg" alt="">
+          <div class="des">
+            <span>Crisp Whites</span>
+            <h5>Classic White Button-Up Shirt</h5>
+            <div class="star"></div>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <h4>$78</h4>
+          </div>
+          <button class="add-to-cart"><i class="fas fa-cart-plus cart"></i></button>
+      </div>
+      <div class="pro" data-id="n4" data-name="Beige Camouflage Shirt" data-price="78" data-image="img/products/n4.jpg">
+        <img src="img/products/n4.jpg" alt="">
+          <div class="des">
+            <span>Desert Camo</span>
+            <h5>Beige Camouflage Shirt</h5>
+            <div class="star"></div>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <h4>$78</h4>
+          </div>
+          <button class="add-to-cart"><i class="fas fa-cart-plus cart"></i></button>
+      </div>
+      <div class="pro" data-id="n5" data-name="Casual Denim Shirt" data-price="78" data-image="img/products/n5.jpg">
+        <img src="img/products/n5.jpg" alt="">
+          <div class="des">
+            <span>Denim Ease</span>
+            <h5>Casual Denim Shirt</h5>
+            <div class="star"></div>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <h4>$78</h4>
+          </div>
+          <button class="add-to-cart"><i class="fas fa-cart-plus cart"></i></button>
+      </div>
+      <div class="pro" data-id="n6" data-name="Striped Casual Shorts" data-price="78" data-image="img/products/n6.jpg">
+        <img src="img/products/n6.jpg" alt="">
+          <div class="des">
+            <span>Summer Stripes</span>
+            <h5>Striped Casual Shorts</h5>
+            <div class="star"></div>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <h4>$78</h4>
+          </div>
+          <button class="add-to-cart"><i class="fas fa-cart-plus cart"></i></button>
+      </div>
+      <div class="pro" data-id="n7" data-name="Tan Utility Shirt" data-price="78" data-image="img/products/n7.jpg">
+        <img src="img/products/n7.jpg" alt="">
+          <div class="des">
+            <span>Safari Trends</span>
+            <h5>Tan Utility Shirt</h5>
+            <div class="star"></div>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <h4>$78</h4>
+          </div>
+          <button class="add-to-cart"><i class="fas fa-cart-plus cart"></i></button>
+      </div>
+      <div class="pro" data-id="n8" data-name="Dark Gray Mandarin Collar Shirt" data-price="78" data-image="img/products/n8.jpg">
+        <img src="img/products/n8.jpg" alt="">
+          <div class="des">
+            <span>Evening Basics</span>
+            <h5>Dark Gray Mandarin Collar Shirt</h5>
+            <div class="star"></div>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <h4>$78</h4>
+          </div>
+          <button class="add-to-cart"><i class="fas fa-cart-plus cart"></i></button>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="newsletter" class="section-p1 section-m1 user-cards">
+      <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>Get E-mail updates about our latest shop and <span>special offers</span>.</p>
+      </div>
+      <div class="form">
+          <input type="text" placeholder="Your Email address">
+          <button class="normal">Sign Up</button>
+      </div>
+  </section>
+
+  <footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="img/logo.png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address: </strong>Janet Extension Tandang Sora Quezon City</p>
+        <p><strong>Phone: </strong>+63 0960 820 8757</p>
+        <p><strong>Hours: </strong>10:00 - 18:00, Mon - Sat</p>
+        <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-pinterest-p"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="#">About us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact us</a>
+    </div>
+
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sing in</a>
+      <a href="#">View Cart</a>
+      <a href="#">My Wishlist</a>
+      <a href="#">Track My Order</a>
+      <a href="#">Help</a>
+    </div>
+    
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+      <img src="img/pay/app.jpg" alt="">
+      <img src="img/pay/play.jpg" alt="">
+      </div>
+      <p>Secured Payment Gateways</p>
+      <img src="img/pay/pay.png" alt="">
+    </div>
+
+    <div class="copyright">
+      <p>© 2023, Laurence Buday, references with Tech2 etc HTML CSS Ecommerce Template</p>
+    </div>
+  </footer>
+  </body>
+  <script src="js/script.js" defer></script>
+</html>
